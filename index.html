@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Home
+        </title>
+        <meta-data charset="utf-8"/>
+        <script>
+            function toggleFullScreen(currentElement) {
+                if (!document.fullscreenElement) {
+                    currentElement.requestFullscreen();
+                } else {
+                  if (currentElement.exitFullscreen) {
+                    document.exitFullscreen(); 
+                  }
+                }
+              }
+              document.addEventListener("click", function(e) {
+                toggleFullScreen(e.target);
+              }, false);
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ol>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Moments</a></li>
+                    <li><a href="">Expenses</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <section>
+
+            </section>
+            <article>
+                Welcome House members, I hope you are doing good.
+            </article>
+            <aside>
+    
+            </aside>
+        </main>
+        <footer>
+            <span></span>
+        </footer>
+    </body>
+</html>
